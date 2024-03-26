@@ -15,6 +15,11 @@ jobs:
       - name: Run node install
         run: npm install --force
 
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Move ticket to 'IN PR REVIEW'
         env:
           BRANCH_NAME: ${{ github.head_ref }}
