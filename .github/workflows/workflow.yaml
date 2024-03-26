@@ -35,11 +35,7 @@ jobs:
   
   move_to_test_on_prod:
     needs: move_to_in_pr_review
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout Code
         uses: actions/checkout@v2
-      
-      - name: Run node install
-        uses: npm install
