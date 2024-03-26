@@ -1,0 +1,53 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  move_to_in_pr_review:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Run node install
+        run: npm install
+      
+      - name: Echo variables
+        shell: bash
+        env:
+          EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
+        run: |
+          echo EVENT NAME "${{ github.event_name }}" && 
+          echo ACTION "${{ github.event.action }}" &&
+          echo MERGED "${{ github.event.pull_request.merged }}" &&
+          echo BRANCH NAME "${{ github.head_ref }}"
+
+      - name: Test NodeJS Script
+        env:
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
+          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
+          TRELLO_LIST_IN_PR_REVIEW: ${{ secrets.TRELLO_LIST_IN_PR_REVIEW }}
+        run: node scripts/workflows/test.js "${{ github.head_ref }}"
+  
+  move_to_test_on_prod:
+    needs: move_to_in_pr_review
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Run node install
+        run: npm install
+      
+      - name: Move ticket to 'TEST ON PROD'
+        env:
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
+          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
+          TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
+        run:  node scripts/workflows/test.js "${{ github.head_ref }}"
