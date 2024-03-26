@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, closed]
 
 jobs:
   move_to_in_pr_review:
@@ -15,34 +14,3 @@ jobs:
 
       - name: Run node install
         run: npm install
-
-      - name: Use Super-Linter
-        uses: github/super-linter@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Test NodeJS Script
-        env:
-          BRANCH_NAME: ${{ github.head_ref }}
-          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
-          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
-          TRELLO_LIST_IN_PR_REVIEW: ${{ secrets.TRELLO_LIST_IN_PR_REVIEW }}
-        run: node scripts/workflows/move_trello_tickets.js
-
-  move_to_test_on_prod:
-    needs: move_to_in_pr_review
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Run node install
-        run: npm install
-
-      - name: Move ticket to 'TEST ON PROD'
-        env:
-          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
-          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
-          TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
-        run: node scripts/workflows/move_trello_tickets.js merged
