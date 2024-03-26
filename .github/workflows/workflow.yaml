@@ -23,10 +23,9 @@ jobs:
           echo EVENT NAME "${{ github.event_name }}" && 
           echo ACTION "${{ github.event.action }}" &&
           echo MERGED "${{ github.event.pull_request.merged }}" &&
-          echo SECRET "$EXAMPLE_SECRET"
 
       - name: Test NodeJS Script
         env:
           EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
-        run: node scripts/workflows/test.js "$EXAMPLE_SECRET"
+        run: node scripts/workflows/test.js
   

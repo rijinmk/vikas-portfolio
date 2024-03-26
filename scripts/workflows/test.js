@@ -1,2 +1,2 @@
 console.log("Hello from nodejs");
-console.log(JSON.stringify(process.argv, null, 2));
+console.log(process.env.EXAMPLE_SECRET);
