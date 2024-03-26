@@ -15,6 +15,11 @@ jobs:
       
       - name: Run node install
         run: npm install
+        
+      - name: Use Super-Linter
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: super-linter/super-linter@v6.3.0
 
       - name: Test NodeJS Script
         env:
