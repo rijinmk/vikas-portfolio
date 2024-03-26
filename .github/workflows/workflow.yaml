@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  move_to_in_pr_review:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Run node install
+        run: npm install
+      
+      - name: Echo variables
+        run: echo EVENT NAME "${{ github.event_name }}" && echo ACTION "${{ github.event.action }}" && echo MERGED "${{ github.event.pull_request.merged }}"
+
+      
