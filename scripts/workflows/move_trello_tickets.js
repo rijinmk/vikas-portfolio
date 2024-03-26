@@ -1,7 +1,7 @@
-const axios = require("axios");
+import axios from 'axios';
 
-const branchName = process.argv[2];
-const isMerged = process.argv[3] === "merged" ? true : false;
+const branchName = process.end.BRANCH_NAME;
+const isMerged = process.argv[2] === 'merged';
 const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
 const match = branchName.match(regex);
 const cardID = match[2];
@@ -15,11 +15,11 @@ axios
         : process.env.TRELLO_LIST_TEST_ON_PROD,
     }
   )
-  .then((response) => {
+  .then(response => {
     console.log(
       `Moved card to new list. Response: ${response.status} ${response.statusText}`
     );
   })
-  .catch((err) => {
+  .catch(err => {
     console.error(err);
   });
