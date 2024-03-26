@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 const branchName = process.argv[2];
 const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
 const match = branchName.match(regex);
