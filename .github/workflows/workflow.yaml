@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, closed]
+    types: [closed]
 
 jobs:
   move_to_in_pr_review:
