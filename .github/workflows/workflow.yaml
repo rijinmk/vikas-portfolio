@@ -26,5 +26,7 @@ jobs:
           echo SECRET "$EXAMPLE_SECRET"
 
       - name: Test NodeJS Script
-        run: node scripts/workflows/test.js
+        env:
+          EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
+        run: node scripts/workflows/test.js "$EXAMPLE_SECRET"
   
