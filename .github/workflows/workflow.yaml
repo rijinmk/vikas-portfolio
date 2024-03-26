@@ -40,3 +40,14 @@ jobs:
     steps: 
       - name: Checkout Code
         uses: actions/checkout@v2
+      
+      - name: Run node install
+        uses: npm install
+      
+      - name: Move ticket to 'TEST ON PROD'
+        env:
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
+          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
+          TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
+        run:  node scripts/workflows/test.js "${{ github.head_ref }}"
