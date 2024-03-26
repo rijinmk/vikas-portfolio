@@ -31,7 +31,7 @@ jobs:
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
           TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           TRELLO_LIST_IN_PR_REVIEW: ${{ secrets.TRELLO_LIST_IN_PR_REVIEW }}
-        run: node scripts/workflows/test.js "${{ github.head_ref }}"
+        run: node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
   
   move_to_test_on_prod:
     needs: move_to_in_pr_review
@@ -50,4 +50,4 @@ jobs:
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
           TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
-        run:  node scripts/workflows/test.js "${{ github.head_ref }}"
+        run:  node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
