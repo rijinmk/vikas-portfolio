@@ -16,10 +16,13 @@ jobs:
         run: npm install
       
       - name: Echo variables
+        shell: bash
+        env:
+          EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
         run: |
           echo EVENT NAME "${{ github.event_name }}" && 
           echo ACTION "${{ github.event.action }}" &&
           echo MERGED "${{ github.event.pull_request.merged }}" &&
-          echo SECRET "${{ secrets.EXAMPLE_SECRET }}"
+          echo SECRET "$EXAMPLE_SECRET"
 
       
