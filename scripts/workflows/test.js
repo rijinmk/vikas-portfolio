@@ -7,7 +7,7 @@ const cardID = match[2];
 console.log("Trello Card ID from NodeJs", cardID);
 
 axios(
-  `https://api.trello.com/1/boards/${process.env.TRELLO_BOARD_ID}/lists??key=${process.env.TRELLO_API_KEY}&token=${process.env.TRELLO_AUTH_TOKEN}`,
+  `https://api.trello.com/1/boards/${process.env.TRELLO_BOARD_ID}/lists?key=${process.env.TRELLO_API_KEY}&token=${process.env.TRELLO_AUTH_TOKEN}`,
   {
     method: "GET",
     headers: {
