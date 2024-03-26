@@ -50,4 +50,4 @@ jobs:
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
           TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
-        run:  node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
+        run:  node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}" merged

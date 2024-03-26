@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const branchName = process.argv[2];
-const isMerged = process.argv[3] ? true : false;
+const isMerged = process.argv[3] === "merged" ? true : false;
 const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
 const match = branchName.match(regex);
 const cardID = match[2];
