@@ -29,5 +29,7 @@ jobs:
         env:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
-        run: node scripts/workflows/test.js "${{ github.head_ref }}"
+        run: |
+          node install axios &&
+          node scripts/workflows/test.js "${{ github.head_ref }}"
   
