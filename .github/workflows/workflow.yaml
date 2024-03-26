@@ -15,7 +15,7 @@ jobs:
       - name: Run node install
         run: npm install --force
 
-      - name: Test NodeJS Script
+      - name: Move ticket to 'IN PR REVIEW'
         env:
           BRANCH_NAME: ${{ github.head_ref }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
