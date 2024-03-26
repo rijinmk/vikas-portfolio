@@ -29,5 +29,6 @@ jobs:
         env:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
+          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
         run: node scripts/workflows/test.js "${{ github.head_ref }}"
   
