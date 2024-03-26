@@ -1,9 +1,10 @@
-name: Test
+name: Moving tickets on Trello
 
 on:
   pull_request:
     branches:
       - main
+    types: [opened, closed]
 
 jobs:
   move_to_in_pr_review:
@@ -14,22 +15,11 @@ jobs:
       
       - name: Run node install
         run: npm install
-      
-      - name: Echo variables
-        shell: bash
-        env:
-          EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
-        run: |
-          echo EVENT NAME "${{ github.event_name }}" && 
-          echo ACTION "${{ github.event.action }}" &&
-          echo MERGED "${{ github.event.pull_request.merged }}" &&
-          echo BRANCH NAME "${{ github.head_ref }}"
 
       - name: Test NodeJS Script
         env:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
-          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           TRELLO_LIST_IN_PR_REVIEW: ${{ secrets.TRELLO_LIST_IN_PR_REVIEW }}
         run: node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
   
@@ -48,6 +38,5 @@ jobs:
         env:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
-          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
         run:  node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
