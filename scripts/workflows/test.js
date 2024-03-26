@@ -1,9 +1,8 @@
-console.log("BRANCH NAME FROM NODE: ", process.argv[2]);
-// const branchName = process.argv[2];
-// const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
-// const match = branchName.match(regex);
-// const cardID = match[2];
-// console.log("Trello Card ID from NodeJs", cardID);
+const branchName = process.argv[2];
+const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
+const match = branchName.match(regex);
+const cardID = match[2];
+console.log("Trello Card ID from NodeJs", cardID);
 
 // axios(
 //   `https://api.trello.com/1/card/${cardID}?key=${apiKey}&token=${oAuthToken}`,
