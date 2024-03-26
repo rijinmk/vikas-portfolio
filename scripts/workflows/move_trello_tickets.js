@@ -6,6 +6,7 @@ const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
 const match = branchName.match(regex);
 const cardID = match[2];
 console.log("Trello Card ID from NodeJs", cardID);
+console.log(`isMerged ${isMerged}`);
 
 axios
   .put(
@@ -13,7 +14,7 @@ axios
     {
       idList: !isMerged
         ? process.env.TRELLO_LIST_IN_PR_REVIEW
-        : process.env.TRELLO_LIST_IN_PR_REVIEW,
+        : process.env.TRELLO_LIST_TEST_ON_PROD,
     }
   )
   .then((response) => {
