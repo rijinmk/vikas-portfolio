@@ -22,7 +22,7 @@ jobs:
         run: |
           echo EVENT NAME "${{ github.event_name }}" && 
           echo ACTION "${{ github.event.action }}" &&
-          echo MERGED "${{ github.event.pull_request.merged }}" &&
+          echo MERGED "${{ github.event.pull_request.merged }}"
 
       - name: Test NodeJS Script
         env:
