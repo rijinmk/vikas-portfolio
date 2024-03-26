@@ -27,6 +27,7 @@ jobs:
 
       - name: Test NodeJS Script
         env:
-          EXAMPLE_SECRET: ${{ secrets.EXAMPLE_SECRET }}
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
         run: node scripts/workflows/test.js "${{ github.head_ref }}"
   
