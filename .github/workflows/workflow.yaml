@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run node install
-        run: npm install --forced
+        run: npm install --force
 
       - name: Test NodeJS Script
         env:
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run node install
-        run: npm install --forced
+        run: npm install --force
 
       - name: Move ticket to 'TEST ON PROD'
         env:
