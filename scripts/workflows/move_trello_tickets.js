@@ -1,10 +1,10 @@
-const axios = require('axios');
+const axios = require('axios')
 
-const branchName = process.env.BRANCH_NAME;
-const isMerged = process.argv[2] === 'merged';
-const regex = /(fix|feat|chore|noticket)\/([\w]+)/;
-const match = branchName.match(regex);
-const cardID = match[2];
+const branchName = process.env.BRANCH_NAME
+const isMerged = process.argv[2] === 'merged'
+const regex = /(fix|feat|chore|noticket)\/([\w]+)/
+const match = branchName.match(regex)
+const cardID = match[2]
 
 axios
   .put(
@@ -12,14 +12,14 @@ axios
     {
       idList: !isMerged
         ? process.env.TRELLO_LIST_IN_PR_REVIEW
-        : process.env.TRELLO_LIST_TEST_ON_PROD,
-    },
+        : process.env.TRELLO_LIST_TEST_ON_PROD
+    }
   )
-  .then((response) => {
+  .then(response => {
     console.log(
-      `Moved card to new list. Response: ${response.status} ${response.statusText}`,
-    );
+      `Moved card to new list. Response: ${response.status} ${response.statusText}`
+    )
   })
-  .catch((err) => {
-    console.error(err);
-  });
+  .catch(err => {
+    console.error(err)
+  })
