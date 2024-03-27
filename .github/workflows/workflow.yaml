@@ -19,6 +19,11 @@ jobs:
         uses: github/super-linter@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_TYPESCRIPT_ES: true
+          VALIDATE_TYPESCRIPT_STANDARD: false
+          ESLINT_CONFIG_FILE: .eslintrc.js
 
       - name: Move ticket to 'IN PR REVIEW'
         env:
