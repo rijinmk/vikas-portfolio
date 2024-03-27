@@ -41,6 +41,9 @@ jobs:
       - name: Run node install
         run: npm install --force
 
+      - name: Set Branch Name Environment Variable
+        run: echo "BRANCH_NAME=$( [[ $GITHUB_EVENT_NAME == 'pull_request' ]] && echo ${{ github.head_ref }} || echo ${GITHUB_REF#refs/heads/} )" >> $GITHUB_ENV
+
       - name: Move ticket to 'TEST ON PROD'
         env:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
