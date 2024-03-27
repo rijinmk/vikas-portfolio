@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, closed]
 
 jobs:
   move_to_in_pr_review:
@@ -14,14 +13,18 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run node install
-        run: npm install
+        run: npm install --force
 
-      - name: Test NodeJS Script
+      - name: Run ESLint
+        run: yarn lint
+
+      - name: Move ticket to 'IN PR REVIEW'
         env:
+          BRANCH_NAME: ${{ github.head_ref }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
           TRELLO_LIST_IN_PR_REVIEW: ${{ secrets.TRELLO_LIST_IN_PR_REVIEW }}
-        run: node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}"
+        run: node scripts/workflows/move_trello_tickets.js
 
   move_to_test_on_prod:
     needs: move_to_in_pr_review
@@ -39,4 +42,4 @@ jobs:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_AUTH_TOKEN: ${{ secrets.TRELLO_AUTH_TOKEN }}
           TRELLO_LIST_TEST_ON_PROD: ${{ secrets.TRELLO_LIST_TEST_ON_PROD }}
-        run: node scripts/workflows/move_trello_tickets.js "${{ github.head_ref }}" merged
+        run: node scripts/workflows/move_trello_tickets.js merged
