@@ -13,6 +13,14 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'error',
-    'no-console': 'error'
+    'comma-dangle': [2, 'always-multiline'],
+    semi: [2, 'never'],
+    quotes: [2, 'single', { avoidEscape: true }],
+    'jsx-quotes': [2, 'prefer-single'],
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'react/jsx-filename-extension': 'off',
+    'no-console': 'warn',
+    '@typescript-eslint/no-var-requires': 'off'
   }
 }
