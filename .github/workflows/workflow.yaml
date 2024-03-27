@@ -15,12 +15,8 @@ jobs:
       - name: Run node install
         run: npm install --force
 
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_TYPESCRIPT_ES: true
-          ESLINT_CONFIG_FILE: .eslintrc.js
+      - name: Run ESLint
+        run: yarn lint
 
       - name: Move ticket to 'IN PR REVIEW'
         env:
