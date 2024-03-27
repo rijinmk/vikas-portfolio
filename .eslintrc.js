@@ -28,5 +28,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'react'],
-  rules: {}
+  rules: {
+    'no-unused-vars': 'error',
+    'no-console': 'error'
+  }
 }
