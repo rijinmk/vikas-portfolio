@@ -5,5 +5,5 @@
   "printWidth": 80,
   "tabWidth": 2,
   "jsxSingleQuote": true,
-  "arrowParens": "avoid"
+  "arrowParents": "avoid"
 }

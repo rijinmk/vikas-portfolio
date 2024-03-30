@@ -21,6 +21,7 @@ module.exports = {
     'import/extensions': 'off',
     'react/jsx-filename-extension': 'off',
     'no-console': 'warn',
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-var-requires': 'off',
+    'comma-dangle': ['error', 'never']
   }
 }
