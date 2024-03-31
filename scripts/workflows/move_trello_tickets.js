@@ -15,11 +15,11 @@ axios
         : process.env.TRELLO_LIST_TEST_ON_PROD
     }
   )
-  .then(response => {
+  .then((response) => {
     console.log(
       `Moved card to new list. Response: ${response.status} ${response.statusText}`
     )
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err)
   })

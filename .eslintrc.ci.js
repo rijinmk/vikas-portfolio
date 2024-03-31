@@ -18,10 +18,10 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'react/jsx-filename-extension': 'off',
-    'no-console': 'warn',
     '@typescript-eslint/no-var-requires': 'off',
     'comma-dangle': ['error', 'never'],
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'off'
+    'no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'no-console': 'off'
   }
 }
