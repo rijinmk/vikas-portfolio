@@ -20,6 +20,9 @@ jobs:
       - name: Run node install
         run: npm install --force
 
+      - name: Run ESLINT
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx --config .eslintrc.ci.js
+
       - name: Set Branch Name Environment Variable
         run: echo "BRANCH_NAME=$( [[ $GITHUB_EVENT_NAME == 'pull_request' ]] && echo ${{ github.head_ref }} || echo ${GITHUB_REF#refs/heads/} )" >> $GITHUB_ENV
 
