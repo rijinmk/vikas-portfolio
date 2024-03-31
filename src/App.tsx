@@ -1,14 +1,19 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Layout/Header/Header'
-import Footer from './components/Layout/Footer/Footer'
+import Layout from './components/Layout/Layout'
+import HomePage from './pages/HomePage/HomePage'
+import CaseStudyPage from './pages/CaseStudyPage/CaseStudyPage'
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Footer />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/case-study' element={<CaseStudyPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   )
 }
 
