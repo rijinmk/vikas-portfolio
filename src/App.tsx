@@ -7,6 +7,8 @@ import CaseStudyPage from './pages/CaseStudyPage/CaseStudyPage'
 function App() {
   const myVar = 'random'
 
+  console.log(myVar)
+
   return (
     <Router>
       <Layout>
