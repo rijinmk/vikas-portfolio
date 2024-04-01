@@ -22,6 +22,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     'comma-dangle': ['error', 'never'],
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'off'
+    '@typescript-eslint/no-unused-vars': 'off',
+    'linebreak-style': 'off'
   }
 }
