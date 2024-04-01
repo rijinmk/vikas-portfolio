@@ -5,8 +5,7 @@ import HomePage from './pages/HomePage/HomePage'
 import CaseStudyPage from './pages/CaseStudyPage/CaseStudyPage'
 
 function App() {
-
-  const myVar = "random"
+  const myVar = 'random'
 
   return (
     <Router>
