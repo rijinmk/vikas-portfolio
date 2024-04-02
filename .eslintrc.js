@@ -23,6 +23,7 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    'jsx-a11y/heading-has-content': 'off'
+    'jsx-a11y/heading-has-content': 'off',
+    'linebreak-style': 'off'
   }
 }
