@@ -7,8 +7,6 @@ interface SectionProps {
 }
 
 function Section({ backgroundImageURL, children }: SectionProps) {
-  console.log(backgroundImageURL)
-
   return (
     <div
       className={styles.root}
