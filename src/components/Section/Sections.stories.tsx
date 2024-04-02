@@ -13,7 +13,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Main: Story = {
+export const Single: Story = {
   args: {
     backgroundImageURL: 'https://picsum.photos/seed/picsum/1080/720',
     children: <h1>Hello</h1>
