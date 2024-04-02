@@ -23,6 +23,11 @@ module.exports = {
     'no-unused-vars': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
     'no-console': 'error',
-    'jsx-a11y/heading-has-content': 'off'
+    'jsx-a11y/heading-has-content': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'import/prefer-default-export': 'off',
+    'react/no-unescaped-entities': 'off'
   }
 }

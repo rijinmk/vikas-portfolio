@@ -9,7 +9,8 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended'
+    'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended'
   ],
   rules: {
     semi: [2, 'never'],
@@ -24,6 +25,11 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     'jsx-a11y/heading-has-content': 'off',
-    'linebreak-style': 'off'
+    'linebreak-style': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'import/prefer-default-export': 'off',
+    'react/no-unescaped-entities': 'off'
   }
 }
