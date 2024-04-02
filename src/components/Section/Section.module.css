@@ -1,5 +1,6 @@
 .root {
   min-height: 60vh;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
