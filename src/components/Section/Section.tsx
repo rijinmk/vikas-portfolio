@@ -3,17 +3,21 @@ import styles from './Section.module.css'
 
 interface SectionProps {
   backgroundImageURL?: string
+  enableAnimation?: boolean
   children: React.ReactNode
 }
 
-function Section({ backgroundImageURL, children }: SectionProps) {
-  console.log(backgroundImageURL)
-
+function Section({
+  backgroundImageURL,
+  children,
+  enableAnimation
+}: SectionProps) {
   return (
     <div
       className={styles.root}
       style={{
-        backgroundImage: `url(${backgroundImageURL})`
+        backgroundImage: `url(${backgroundImageURL})`,
+        backgroundAttachment: enableAnimation ? 'fixed' : 'none'
       }}
     >
       {children}
@@ -22,7 +26,8 @@ function Section({ backgroundImageURL, children }: SectionProps) {
 }
 
 Section.defaultProps = {
-  backgroundImageURL: ''
+  backgroundImageURL: '',
+  enableAnimation: true
 }
 
 export default Section

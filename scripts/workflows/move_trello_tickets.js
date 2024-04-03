@@ -16,10 +16,10 @@ axios
     }
   )
   .then((response) => {
-    console.log(
-      `Moved card to new list. Response: ${response.status} ${response.statusText}`
+    process.stdout.write(
+      `Moved card to new list. Response: ${response.status} ${response.statusText}\n`
     )
   })
   .catch((err) => {
-    console.error(err)
+    process.stdout.write(`Error occurred: ${err}\n`)
   })
