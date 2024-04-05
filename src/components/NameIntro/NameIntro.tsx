@@ -2,18 +2,20 @@ import React from 'react'
 import styles from './NameIntro.module.css'
 
 interface NameIntroProps {
-  names: string
+  name: string
   subtitle?: string
   textColor?: string
   largeFontSize?: number
 }
 
 function NameIntro({
-  names,
+  name,
   subtitle,
   textColor,
   largeFontSize
 }: NameIntroProps) {
+  const names = name.split(' ').map((e) => e)
+
   return (
     <div
       className={styles.root}
@@ -25,11 +27,11 @@ function NameIntro({
       <div>
         I<span className={styles.primary}>'</span>M
       </div>
-      <div>
-        {names}
-        <span className={styles.primary}>.</span>
-      </div>
-      {subtitle && <p>{subtitle}</p>}
+      {names.map((e) => (
+        <div>{e}</div>
+      ))}
+      <span className={styles.primary}>.</span>
+      {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
     </div>
   )
 }

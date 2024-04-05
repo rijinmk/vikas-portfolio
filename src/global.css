@@ -6,6 +6,10 @@
   --background-color-secondary: #1e1e1e;
 
   --text-color: #ffffff;
+
+  --font-lulo-bold: 'Lulo Bold';
+  --font-lulo-thin: 'Lulo thin';
+  --font-avenir-thin: 'Avenir Light';
 }
 
 @font-face {

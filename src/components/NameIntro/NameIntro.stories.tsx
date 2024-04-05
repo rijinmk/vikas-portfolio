@@ -13,18 +13,18 @@ type Story = StoryObj<typeof meta>
 
 export const ShortName: Story = {
   args: {
-    names: 'Rijin'
+    name: 'Rijin'
   }
 }
 
 export const FullName: Story = {
   args: {
-    names: 'Rijin Mukundan'
+    name: 'Rijin Mukundan'
   }
 }
 
 export const VeryLongNames: Story = {
   args: {
-    names: 'Zayed bin Sultan Al Nahyan'
+    name: 'Zayed bin Sultan Al Nahyan'
   }
 }
