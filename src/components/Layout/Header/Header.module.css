@@ -1,5 +1,4 @@
 .root {
-  /*   border: 1px solid red; */
   height: 80px;
   display: flex;
   align-items: center;
@@ -11,18 +10,18 @@
   font-family: "Avenir Light";
 }
 
-.root > .headerContainer {
+.root > .header_container {
   position: relative;
   width: 900px;
 }
 
 .logo_container {
-  z-index: 3;
+  z-index: 5;
   margin-right: auto;
   position: relative;
 }
 
-nav {
+.nav_container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,7 +30,7 @@ nav {
   z-index: 4;
 }
 
-ul {
+.nav_list_container {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -41,7 +40,7 @@ ul {
 
 .navlink {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   letter-spacing: 1px;
   transition: ease 0.5s;
   font-size: clamp(0.4rem, 4vw, 1rem);
@@ -67,11 +66,10 @@ ul {
   }
 
   .hamburger_container {
-    /*    border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 4;
   }
 
   .hamburger {
@@ -79,7 +77,6 @@ ul {
     border: none;
     cursor: pointer;
     display: flex;
-    z-index: 3;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -120,15 +117,14 @@ ul {
   }
 
   .logo_container {
-    /*   border: 1px solid red; */
     margin-left: 10px;
   }
 
-  .root > .headerContainer {
+  .root > .header_container {
     width: 100%;
   }
 
-  nav {
+  .nav_container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -146,7 +142,7 @@ ul {
     left: 0%;
   }
 
-  ul {
+  .nav_list_container {
     flex-direction: column;
   }
 }
