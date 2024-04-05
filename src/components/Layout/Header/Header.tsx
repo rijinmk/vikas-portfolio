@@ -5,6 +5,7 @@ import styles from './Header.module.css'
 interface HeaderProps {
   logo: string
   navItems: string[]
+  // eslint-disable-next-line no-unused-vars
   onNavItemClick: (item: string) => void
   activeItem: string
   bgColor?: string

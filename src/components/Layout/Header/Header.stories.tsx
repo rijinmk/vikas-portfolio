@@ -20,6 +20,6 @@ export const Single: Story = {
     onNavItemClick: () => {},
     activeItem: '',
     bgColor: '#0f0f0f84',
-    textColor: '#FFFFFF',
+    textColor: '#FFFFFF'
   }
 }
