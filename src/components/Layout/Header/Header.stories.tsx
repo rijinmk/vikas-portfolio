@@ -19,10 +19,8 @@ export const Single: Story = {
     logo: Logo,
     navItems: ['HOME', 'PROJECTS', 'SKILLS', 'EXPERIENCE', 'CONTACT'],
     onNavItemClick: () => {},
-    activeItem: 'HOME',
+    activeItem: '',
     bgColor: '#0f0f0f84',
     textColor: '#FFFFFF',
-    fontFamily: 'Avenir Light, sans-serif',
-    fontSize: '16'
   }
 }

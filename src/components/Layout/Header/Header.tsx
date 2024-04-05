@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Header.module.css'
 
@@ -9,8 +9,6 @@ interface HeaderProps {
   activeItem: string
   bgColor?: string
   textColor?: string
-  fontFamily?: string
-  fontSize?: string | number
 }
 
 function Header({
@@ -19,46 +17,51 @@ function Header({
   onNavItemClick,
   activeItem,
   bgColor,
-  textColor,
-  fontFamily,
-  fontSize
+  textColor
 }: HeaderProps) {
-  const hamburger = useRef<HTMLButtonElement>(null) // Change here
-  const hamburgerMenu = document.getElementById('hamburger')
+  const [isNavOpen, setIsNavOpen] = useState(false)
 
   const openHamburger = () => {
-    hamburgerMenu?.classList.toggle('open')
+    setIsNavOpen(!isNavOpen)
   }
 
+  useEffect(() => {
+    if (document.body.style.overflow === 'hidden') {
+      document.body.style.overflow = 'auto'
+    } else {
+      document.body.style.overflow = 'hidden'
+    }
+  }, [isNavOpen])
+
   return (
-    <div className={styles.root} style={{ backgroundColor: bgColor, color: textColor, fontFamily }}>
-      <div className={styles.logo_container}>
-        <img className='logo' src={logo} alt='logo' />
+    <div className={styles.root} style={{ backgroundColor: bgColor, color: textColor }}>
+      <div className={styles.headerContainer}>
+        <div className={styles.logo_container}>
+          <img className='logo' src={logo} alt='logo' />
+        </div>
+        <nav className={`${styles.nav} ${isNavOpen ? styles.nav_open : ''}`}>
+          <ul>
+            {navItems.map((eachItem: string) => (
+              <li>
+                <NavLink
+                  key={eachItem}
+                  to={`/${eachItem.toLowerCase()}`}
+                  onClick={() => onNavItemClick(eachItem)}
+                  className={`${styles.navlink} ${eachItem.toUpperCase() === activeItem ? styles.active : ''}`}
+                >
+                  {eachItem}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          {navItems.map((eachItem: string) => (
-            <li>
-              <NavLink
-                key={eachItem}
-                to={`/${eachItem.toLowerCase()}`}
-                onClick={() => onNavItemClick(eachItem)}
-                style={{ fontSize }}
-                className={`${styles.navlink} ${eachItem.toUpperCase() === activeItem ? styles.active : ''}`}
-              >
-                {eachItem}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
 
       <div className={styles.hamburger_container}>
         <button
           type='button'
-      /*     ref={hamburger} */
           id={styles.hamburger}
-          /* className={styles.hamburger} */
+          className={`${styles.hamburger} ${isNavOpen ? styles.open : ''}`}
           onClick={openHamburger}
         >
           <svg width='50' height='50' viewBox='0 0 100 100'>

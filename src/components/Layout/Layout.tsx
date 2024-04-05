@@ -23,8 +23,6 @@ function Layout({ children }: LayoutProps) {
         activeItem={activeItem}
         bgColor='#0f0f0f84'
         textColor='#FFFFFF'
-        fontFamily='Avenir Light, sans-serif'
-        fontSize='16'
       />
       {children}
       <Footer />

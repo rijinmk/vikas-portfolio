@@ -8,12 +8,18 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.088);
+  font-family: "Avenir Light";
+}
+
+.root > .headerContainer {
+  position: relative;
+  width: 900px;
 }
 
 .logo_container {
-  /*   border: 1px solid red; */
-  margin-left: 10px;
-  z-index: 9999;
+  z-index: 3;
+  margin-right: auto;
+  position: relative;
 }
 
 nav {
@@ -22,7 +28,7 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.5s;
-  z-index: 999;
+  z-index: 4;
 }
 
 ul {
@@ -53,9 +59,6 @@ ul {
   display: none;
 }
 
-.logo_container {
-  margin-right: auto;
-}
 
 /* MOBILE STYLES */
 @media (max-width: 900px) {
@@ -68,7 +71,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999999;
+    z-index: 3;
   }
 
   .hamburger {
@@ -76,7 +79,7 @@ ul {
     border: none;
     cursor: pointer;
     display: flex;
-    z-index: 999;
+    z-index: 3;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -114,6 +117,15 @@ ul {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
+  }
+
+  .logo_container {
+    /*   border: 1px solid red; */
+    margin-left: 10px;
+  }
+
+  .root > .headerContainer {
+    width: 100%;
   }
 
   nav {
