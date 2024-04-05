@@ -1,0 +1,17 @@
+.root {
+  font-size: 65px;
+  font-family: 'Lulo Bold';
+}
+
+.root > div:last-of-type {
+  display: inline-block;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-family: var(--font-avenir-thin);
+}

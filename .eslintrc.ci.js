@@ -29,6 +29,8 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
     'react/no-unescaped-entities': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/no-unused-prop-types': 'error',
     'linebreak-style': 'off'
   }
 }
