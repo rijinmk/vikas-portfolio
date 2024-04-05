@@ -8,25 +8,24 @@
   --text-color: #ffffff;
 }
 
-
 @font-face {
-  font-family: "Lulo Bold";
-  src: url(".././src/assets/Lulo\ Clean/Lulo Clean One Bold.otf") format('opentype');
+  font-family: 'Lulo Bold';
+  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One Bold.otf')
+    format('opentype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Lulo thin";
-  src: url(".././src/assets/Lulo\ Clean/Lulo Clean One.otf") format('opentype');
+  font-family: 'Lulo thin';
+  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One.otf') format('opentype');
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: "Avenir Light";
-  src: url(".././src/assets/Avenir\ Light/Avenir Light.ttf") format('truetype');
+  font-family: 'Avenir Light';
+  src: url('.././src/assets/Avenir\ Light/Avenir Light.ttf') format('truetype');
   font-weight: normal;
 }
-
 
 body {
   margin: 0;

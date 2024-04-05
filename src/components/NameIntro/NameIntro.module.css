@@ -1,0 +1,8 @@
+.root {
+  font-size: 65px;
+  font-family: 'Lulo Bold';
+}
+
+.primary {
+  color: var(--primary-color);
+}
