@@ -9,9 +9,9 @@ function ComponentGallery() {
     <>
       {/* Section Heading Component ------------------------------------- */}
       <div className={styles.root}>
-        <div className={styles.title}>NameIntro</div>
+        <div className={styles.title}>SectionHeading</div>
         <div className={styles.componentHolder}>
-          <div className={styles.authorName}>Author: Rijin Mk</div>
+          <div className={styles.authorName}>Author: Dayan</div>
           <SectionHeading index='02' title='PROJECTS' subtitle='My Latest Work' color='#000000' />
         </div>
       </div>

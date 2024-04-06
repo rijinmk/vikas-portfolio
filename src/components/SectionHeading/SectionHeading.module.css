@@ -13,13 +13,12 @@
 
 .project_title_container > h1 {
   font-family: 'Lulo Bold';
-  color: var(--text-color);
+/*   color: var(--text-color); */
   font-size: clamp(0.4rem, 5vw, 2.5rem);
 }
 
 .project_title_container > .section_index {
   font-family: 'Lulo Bold';
-/*   color: var(--secondary-color); */
 }
 
 .section_index {
@@ -29,7 +28,7 @@
 .subtitle {
   font-family: 'Lulo thin';
   font-weight: lighter;
-  color: var(--text-color);
+/*   color: var(--text-color); */
   font-size: clamp(0.4rem, 3vw, 1.4rem);
   letter-spacing: -2px;
 }

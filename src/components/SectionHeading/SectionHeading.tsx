@@ -17,7 +17,12 @@ export default function SectionHeading({
   const indexColor = `${color}AF`
 
   return (
-    <div className={styles.root}>
+    <div
+      className={styles.root}
+      style={{
+        color: 'black'
+      }}
+    >
       <div className={styles.project_title_container}>
         <span className={`${styles.section_index}`} style={{ color: indexColor }}>
           {index}
