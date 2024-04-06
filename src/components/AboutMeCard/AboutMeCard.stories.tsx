@@ -1,4 +1,3 @@
-import React from 'react'
 import type { StoryObj } from '@storybook/react'
 import AboutMeCard from './AboutMeCard'
 import '../../global.css'
