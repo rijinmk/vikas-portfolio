@@ -34,3 +34,8 @@
 body {
   margin: 0;
 }
+
+.logo {
+  width: clamp(100px, 30vw, 150px);
+  display: block;
+}
