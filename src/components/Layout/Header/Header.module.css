@@ -8,6 +8,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.088);
   font-family: "Avenir Light";
+  z-index: 999;
 }
 
 .logo_container {
