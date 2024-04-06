@@ -19,7 +19,7 @@
 
 .project_title_container > .section_index {
   font-family: 'Lulo Bold';
-  color: var(--secondary-color);
+/*   color: var(--secondary-color); */
 }
 
 .section_index {
