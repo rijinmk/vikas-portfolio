@@ -37,11 +37,11 @@ function Header({
 
   return (
     <div className={styles.root} style={{ backgroundColor: bgColor, color: textColor }}>
-      <div className={styles.header_container}>
-        <div className={styles.logo_container}>
-          <img className='logo' src={logo} alt='logo' />
-        </div>
-        <nav className={`${styles.nav_container} ${isNavOpen ? styles.nav_open : ''}`}>
+      <div className={styles.logo_container}>
+        <img className='logo' src={logo} alt='logo' />
+      </div>
+      <div className={`${styles.header_container} ${isNavOpen ? styles.nav_open : ''}`}>
+        <nav className={`${styles.nav_container}`}>
           <ul className={styles.nav_list_container}>
             {navItems.map((eachItem: string) => (
               <li>

@@ -10,24 +10,12 @@
   font-family: "Avenir Light";
 }
 
-.root > .header_container {
-  position: relative;
-  width: 900px;
-}
-
 .logo_container {
-  z-index: 1;
-  margin-right: auto;
-  position: relative;
-}
-
-.nav_container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: left 0.5s;
-  z-index: 1;
+  transform: translate(-300%,-50%);
+  z-index: 5;
 }
 
 .nav_list_container {
@@ -119,12 +107,15 @@
   .logo_container {
     margin-left: 10px;
   }
-
-  .root > .header_container {
-    width: 100%;
+  
+  .logo_container {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
   }
 
-  .nav_container {
+  .root > .header_container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -136,9 +127,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: left 0.5s;
   }
 
-  .nav_open {
+  .root > .nav_open {
     left: 0%;
   }
 
