@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ComponentGallery.module.css'
 import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
+import SkillGrid from '../../components/SkillGrid/SkillGrid'
 
 function ComponentGallery() {
   return (
@@ -12,6 +13,15 @@ function ComponentGallery() {
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Rijin Mk</div>
           <NameIntro name='Rijin Mukundan' subtitle='Front-End Engineer' />
+        </div>
+      </div>
+
+      {/* SkillGrid Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>SkillGrid</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Vikas Prakash</div>
+          <SkillGrid />
         </div>
       </div>
 
