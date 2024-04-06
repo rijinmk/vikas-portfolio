@@ -1,0 +1,41 @@
+.root {
+    border: 1px solid red
+}
+
+.main_project_title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.project_title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project_title_container > h1 {
+    font-family: 'Lulo Bold';
+    color: var(--text-color);
+    font-size: clamp(0.4rem, 5vw, 2.5rem);
+}
+
+.project_title_container > .section_index {
+    font-family: 'Lulo Bold';
+    color: var(--secondary-color);
+}
+
+.section_index {
+    font-size: clamp(0.4rem, 5vw, 2.5rem);
+}
+
+.subtitle {
+    font-family: 'Lulo thin';
+    font-weight: lighter;
+    color: var(--text-color);
+    font-size: clamp(0.4rem, 3vw, 1.4rem);
+    letter-spacing: -2px;
+}
