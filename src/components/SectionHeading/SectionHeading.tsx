@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './Projects.module.css'
+import styles from './SectionHeading.module.css'
 
 interface ProjectProps {
-  index : string
-  title : string
-  subtitle : string
+  index: string
+  title: string
+  subtitle: string
 }
 
-export default function Projects({
+export default function SectionHeading({
   index,
   title,
   subtitle
