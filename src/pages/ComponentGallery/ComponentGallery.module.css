@@ -1,0 +1,39 @@
+.root {
+  font-family: monospace;
+  position: relative;
+}
+
+.root > .title {
+  background: #fff;
+  z-index: 3;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  font-size: 65px;
+}
+
+.root > .title:before {
+  content: '';
+  border-top: 2px solid #333;
+  width: 300%;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 100%;
+}
+
+.root > .componentHolder {
+  padding: 50px;
+  border: 2px dotted #222;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.authorName {
+  display: inline-block;
+  padding: 20px;
+  background: #eee;
+  margin-bottom: 10px;
+}
