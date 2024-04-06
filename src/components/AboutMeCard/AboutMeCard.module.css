@@ -1,17 +1,18 @@
 .root {
-  width: 700px;
+  width: 650px;
   min-height: 200px;
   height: auto;
   background-color: var(--secondary-color);
-  padding: 10px 70px;
+  padding: 20px 70px;
 }
 
 .profileIcon {
   border: 3px solid white;
-}
-
-.profileIcon > img {
-  width: auto;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 /* padding: 10px 20px */

@@ -7,11 +7,10 @@ interface AboutMeCardProps {
   description: string
 }
 
-const imgUrl = 'https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg'
-
 function AboutMeCard({ profileIcon, title, description }: AboutMeCardProps) {
   return (
     <div className={styles.root}>
+      <div className={styles.profileIcon} style={{ backgroundImage: `url('${profileIcon}')` }} />
       <div className={styles.title}>{title}</div>
       <div className={styles.description}>{description}</div>
     </div>
