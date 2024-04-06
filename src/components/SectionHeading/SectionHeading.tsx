@@ -14,13 +14,11 @@ export default function SectionHeading({
 }: ProjectProps) {
   return (
     <div className={styles.root}>
-      <div className={styles.main_project_title_container}>
-        <div className={styles.project_title_container}>
-          <span className={styles.section_index}>{index}</span>
-          <h1>{title.toUpperCase()}</h1>
-        </div>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
+      <div className={styles.project_title_container}>
+        <span className={styles.section_index}>{index}</span>
+        <h1>{title}</h1>
       </div>
+      <h2 className={styles.subtitle}>{subtitle}</h2>
     </div>
   )
 }
