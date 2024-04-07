@@ -1,0 +1,33 @@
+.root {
+  width: 550px;
+  min-height: 200px;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: 50px 70px;
+}
+
+.profileIcon {
+  border: 3px solid white;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* padding: 10px 20px */
+.title {
+  font-family: var(--font-lulo-bold);
+  font-size: clamp(0.4rem, 5vw, 2.5rem);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0 auto;
+  margin: 10px 0px;
+}
+
+.description {
+  font-family: var(--font-avenir-thin);
+  color: var(--text-color);
+  white-space: pre;
+  text-wrap: wrap;
+}
