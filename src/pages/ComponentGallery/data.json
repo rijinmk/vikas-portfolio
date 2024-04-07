@@ -1,6 +1,76 @@
 {
   "AboutMeCard": {
-    "title": "",
-    "description": " I am a UI/UX Designer and an avid VFX and gaming fan. Although I have experience with programming, my passion is for creating new designs with ease.‌ \n\n With a degree in Software Engineering, intensive training in UX design research, and a knack for creating killer content, motion graphics, and graphic design - I'm a total tech whiz! \n\n My strong creative and technical expertise enables me to create interactive prototypes, tell gripping tales, and eliminate the communication gap between designers and programmers when bringing concepts from conception to completion. \n\n I believe that good design can make a difference in people's lives. By developing experiences that are more beneficial, usable, pleasurable, and human, I hope to make a difference!"
+    "title": "ABOUT ME",
+    "description": "I am a UI/UX Designer and an avid VFX and gaming fan. Although I have experience with programming, my passion is for creating new designs with ease.‌ \n\n With a degree in Software Engineering, intensive training in UX design research, and a knack for creating killer content, motion graphics, and graphic design - I\"m a total tech whiz! \n\n My strong creative and technical expertise enables me to create interactive prototypes, tell gripping tales, and eliminate the communication gap between designers and programmers when bringing concepts from conception to completion. \n\n I believe that good design can make a difference in people's lives. By developing experiences that are more beneficial, usable, pleasurable, and human, I hope to make a difference!"
+  },
+  "SkillGrid": {
+    "skills": [
+      {
+        "name": "AFFINITY MAPPING",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "PERSONAS",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "USABILITY TESTING",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "CARD SORT",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "PROTOTYPE",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "USER INTERVIEW",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "COMPETITIVE ANALYSIS",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "RESPONSIVE DESIGN ",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "​USER FLOW",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "SKETCHING",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "SYNTHESIZE USER RESEARCH",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "VISUAL DESIGN",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      },
+      {
+        "name": "WIREFRAMING",
+        "image": "https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg"
+      }
+    ],
+    "spacing": 20
+  },
+  "NameIntro": {
+    "name": "Rijin Mukundan",
+    "subtitle": "Front-End Engineer"
+  },
+  "SectionHeading": {
+    "index": "02",
+    "title": "PROJECTS",
+    "subtitle": "My Latest Work'",
+    "color": "#000000"
+  },
+  "Section": {
+    "backgroundImageURL": "https://picsum.photos/seed/picsum/1080/720"
   }
 }
