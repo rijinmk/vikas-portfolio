@@ -2,7 +2,10 @@ import React from 'react'
 import styles from './ComponentGallery.module.css'
 import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
+import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
+import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
+import data from './data.json'
 
 function ComponentGallery() {
   return (
@@ -12,12 +15,7 @@ function ComponentGallery() {
         <div className={styles.title}>SectionHeading</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Dayan</div>
-          <SectionHeading
-            index='02'
-            title='PROJECTS'
-            subtitle='My Latest Work'
-            color='#000000'
-          />
+          <SectionHeading index='02' title='PROJECTS' subtitle='My Latest Work' color='#000000' />
         </div>
       </div>
 
@@ -41,6 +39,15 @@ function ComponentGallery() {
           <Section backgroundImageURL='https://picsum.photos/seed/picsum/1080/720'>
             <h1>SECTION 2</h1>
           </Section>
+        </div>
+      </div>
+
+      {/* AboutMeCard Component */}
+      <div className={styles.root}>
+        <div className={styles.title}>About Me Card</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Hexisbad</div>
+          <AboutMeCard profileIcon={profileIcon} title='ABOUT ME' description={data.AboutMeCard.description} />
         </div>
       </div>
     </>

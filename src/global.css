@@ -7,15 +7,14 @@
 
   --text-color: #ffffff;
 
-  --font-lulo-bold: 'Lulo Bold';
-  --font-lulo-thin: 'Lulo thin';
-  --font-avenir-thin: 'Avenir Light';
+  --font-lulo-bold: 'Lulo Bold', Helvetica, Arial;
+  --font-lulo-thin: 'Lulo thin', Helvetica, Arial;
+  --font-avenir-thin: 'Avenir Light', Helvetica, Arial;
 }
 
 @font-face {
   font-family: 'Lulo Bold';
-  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One Bold.otf')
-    format('opentype');
+  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One Bold.otf') format('opentype');
   font-weight: bold;
 }
 
