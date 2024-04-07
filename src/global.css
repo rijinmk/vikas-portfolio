@@ -14,19 +14,19 @@
 
 @font-face {
   font-family: 'Lulo Bold';
-  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One Bold.otf') format('opentype');
+  src: url('.././src/assets/fonts/lulo-clean/lulo-clean-one-bold.otf') format('opentype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Lulo thin';
-  src: url('.././src/assets/Lulo\ Clean/Lulo Clean One.otf') format('opentype');
+  src: url('.././src/assets/fonts/lulo-clean/lulo-clean-one.otf') format('opentype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'Avenir Light';
-  src: url('.././src/assets/Avenir\ Light/Avenir Light.ttf') format('truetype');
+  src: url('.././src/assets/fonts/avenir/avenir-light.ttf') format('truetype');
   font-weight: normal;
 }
 
