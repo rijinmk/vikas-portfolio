@@ -4,8 +4,8 @@ import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
-import Data from './Data.json'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
+import data from './data.json'
 
 function ComponentGallery() {
   return (
@@ -47,7 +47,7 @@ function ComponentGallery() {
         <div className={styles.title}>About Me Card</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Hexisbad</div>
-          <AboutMeCard profileIcon={profileIcon} title='ABOUT ME' description={Data.description} />
+          <AboutMeCard profileIcon={profileIcon} title='ABOUT ME' description={data.AboutMeCard.description} />
         </div>
       </div>
     </>

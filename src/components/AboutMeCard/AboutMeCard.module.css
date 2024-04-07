@@ -1,9 +1,9 @@
 .root {
-  width: 650px;
+  width: 550px;
   min-height: 200px;
   height: auto;
   background-color: var(--secondary-color);
-  padding: 20px 70px;
+  padding: 50px 70px;
 }
 
 .profileIcon {
