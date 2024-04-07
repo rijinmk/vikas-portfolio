@@ -5,7 +5,7 @@ import Section from '../../components/Section/Section'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
-import data from './data.json'
+import data from './_data.json'
 
 function ComponentGallery() {
   return (
