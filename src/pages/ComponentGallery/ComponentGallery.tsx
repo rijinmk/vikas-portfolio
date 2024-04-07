@@ -3,6 +3,7 @@ import styles from './ComponentGallery.module.css'
 import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
 import SkillGrid from '../../components/SkillGrid/SkillGrid'
+import SectionHeading from '../../components/SectionHeading/SectionHeading'
 
 const SkillGridData = {
   skills: [
@@ -84,6 +85,20 @@ function ComponentGallery() {
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Rijin Mk</div>
           <SkillGrid {...SkillGridData} />
+        </div>
+      </div>
+
+      {/* Section Heading Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>SectionHeading</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Dayan</div>
+          <SectionHeading
+            index='02'
+            title='PROJECTS'
+            subtitle='My Latest Work'
+            color='#000000'
+          />
         </div>
       </div>
 
