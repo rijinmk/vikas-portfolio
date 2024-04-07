@@ -12,7 +12,12 @@ function ComponentGallery() {
         <div className={styles.title}>SectionHeading</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Dayan</div>
-          <SectionHeading index='02' title='PROJECTS' subtitle='My Latest Work' color='#000000' />
+          <SectionHeading
+            index='02'
+            title='PROJECTS'
+            subtitle='My Latest Work'
+            color='#000000'
+          />
         </div>
       </div>
 
