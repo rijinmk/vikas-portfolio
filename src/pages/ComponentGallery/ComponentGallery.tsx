@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ComponentGallery.module.css'
 import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
+import SkillGrid from '../../components/SkillGrid/SkillGrid'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
@@ -10,12 +11,21 @@ import data from './data.json'
 function ComponentGallery() {
   return (
     <>
+      {/* SkillGrid Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>SkillGrid</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Rijin Mk</div>
+          <SkillGrid {...data.SkillGrid} />
+        </div>
+      </div>
+
       {/* Section Heading Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>SectionHeading</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Dayan</div>
-          <SectionHeading index='02' title='PROJECTS' subtitle='My Latest Work' color='#000000' />
+          <SectionHeading {...data.SectionHeading} />
         </div>
       </div>
 
@@ -24,7 +34,7 @@ function ComponentGallery() {
         <div className={styles.title}>NameIntro</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Rijin Mk</div>
-          <NameIntro name='Rijin Mukundan' subtitle='Front-End Engineer' />
+          <NameIntro {...data.NameIntro} />
         </div>
       </div>
 
@@ -33,11 +43,8 @@ function ComponentGallery() {
         <div className={styles.title}>Section</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Rijin Mk</div>
-          <Section backgroundImageURL='https://picsum.photos/1080/720?grayscale'>
+          <Section {...data.Section}>
             <h1>SECTION 1</h1>
-          </Section>
-          <Section backgroundImageURL='https://picsum.photos/seed/picsum/1080/720'>
-            <h1>SECTION 2</h1>
           </Section>
         </div>
       </div>
@@ -47,7 +54,7 @@ function ComponentGallery() {
         <div className={styles.title}>About Me Card</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Hexisbad</div>
-          <AboutMeCard profileIcon={profileIcon} title='ABOUT ME' description={data.AboutMeCard.description} />
+          <AboutMeCard profileIcon={profileIcon} {...data.AboutMeCard} />
         </div>
       </div>
     </>
