@@ -5,10 +5,20 @@ import Section from '../../components/Section/Section'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
 import Data from './Data.json'
+import SectionHeading from '../../components/SectionHeading/SectionHeading'
 
 function ComponentGallery() {
   return (
     <>
+      {/* Section Heading Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>SectionHeading</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Dayan</div>
+          <SectionHeading index='02' title='PROJECTS' subtitle='My Latest Work' color='#000000' />
+        </div>
+      </div>
+
       {/* NameIntro Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>NameIntro</div>
@@ -31,6 +41,7 @@ function ComponentGallery() {
           </Section>
         </div>
       </div>
+
       {/* AboutMeCard Component */}
       <div className={styles.root}>
         <div className={styles.title}>About Me Card</div>
