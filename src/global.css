@@ -36,6 +36,6 @@ body {
 }
 
 .logo {
-  width: clamp(100px, 30vw, 150px);
+  width: clamp(20px, 10vw, 50px);
   display: block;
 }

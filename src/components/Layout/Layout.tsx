@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import Logo from '../../assets/Logo/vikas_logo.svg'
+import Logo from '../../assets/Logo/vikas-logo.svg'
 
 interface LayoutProps {
   children: React.ReactNode
