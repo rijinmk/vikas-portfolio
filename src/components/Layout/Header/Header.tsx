@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Header.module.css'
-import HamburgerIcon from '../../../assets/Hamburger/HamburgerIcon'
+import HamburgerIcon from '../../../assets/images/svg/HamburgerIcon'
 
 interface HeaderProps {
   logo: string

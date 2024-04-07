@@ -4,7 +4,7 @@ import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
 import SkillGrid from '../../components/SkillGrid/SkillGrid'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
-import profileIcon from '../../assets/images/Profile-Icon/vigas-pragash.jpg'
+import profileIcon from '../../assets/images/jpg/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
 
