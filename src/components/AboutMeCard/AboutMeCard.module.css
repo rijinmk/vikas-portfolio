@@ -28,6 +28,6 @@
 .description {
   font-family: var(--font-avenir-thin);
   color: var(--text-color);
-  white-space: break-spaces;
+  white-space: pre;
   text-wrap: wrap;
 }
