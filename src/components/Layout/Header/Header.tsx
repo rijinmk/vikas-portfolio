@@ -34,7 +34,7 @@ function Header({
       document.body.style.overflow = 'auto'
     }
   }, [isNavOpen])
-  
+
   return (
     <div className={styles.root} style={{ backgroundColor: bgColor, color: textColor }}>
       <div className={styles.logo_container}>
