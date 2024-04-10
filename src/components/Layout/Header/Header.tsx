@@ -28,13 +28,12 @@ function Header({
   }
 
   useEffect(() => {
-    if (isNavOpen) {
-      document.body.style.overflow = 'hidden';
+    if (document.body.style.overflow === 'hidden') {
+      document.body.style.overflow = 'auto'
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'hidden'
     }
-  }, [isNavOpen]);
-  
+  }, [isNavOpen])
 
   return (
     <div className={styles.root} style={{ backgroundColor: bgColor, color: textColor }}>
