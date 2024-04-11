@@ -4,13 +4,22 @@ import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
 import SkillGrid from '../../components/SkillGrid/SkillGrid'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
-import profileIcon from '../../assets/images/jpg/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
+import Footer from '../../components/Layout/Footer/Footer'
 
 function ComponentGallery() {
   return (
     <>
+      {/* Footer Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>Footer</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Rijin Mk</div>
+          <Footer {...data.Footer} />
+        </div>
+      </div>
+
       {/* SkillGrid Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>SkillGrid</div>
@@ -54,7 +63,7 @@ function ComponentGallery() {
         <div className={styles.title}>About Me Card</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Hexisbad</div>
-          <AboutMeCard profileIcon={profileIcon} {...data.AboutMeCard} />
+          <AboutMeCard {...data.AboutMeCard} />
         </div>
       </div>
     </>
