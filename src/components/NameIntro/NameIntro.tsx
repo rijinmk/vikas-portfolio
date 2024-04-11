@@ -8,20 +8,14 @@ interface NameIntroProps {
   largeFontSize?: number
 }
 
-function NameIntro({
-  name,
-  subtitle,
-  textColor,
-  largeFontSize
-}: NameIntroProps) {
+function NameIntro({ name, subtitle, textColor, largeFontSize }: NameIntroProps) {
   const names = name.split(' ').map((e) => e)
-
   return (
     <div
       className={styles.root}
       style={{
         color: textColor || 'black',
-        fontSize: largeFontSize || '65px'
+        fontSize: largeFontSize || 'clamp(0.4rem, 5vw, 2.5rem)'
       }}
     >
       <div>
