@@ -3,14 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'airbnb',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'airbnb', 'plugin:jsx-a11y/recommended', 'plugin:react-hooks/recommended'],
   rules: {
     semi: [2, 'never'],
     quotes: [2, 'single', { avoidEscape: true }],
@@ -31,6 +24,7 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/no-unused-prop-types': 'error',
-    'linebreak-style': 'off'
+    'linebreak-style': 'off',
+    'object-curly-newline': 'off'
   }
 }
