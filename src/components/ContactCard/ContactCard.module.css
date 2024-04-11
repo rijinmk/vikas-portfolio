@@ -1,0 +1,56 @@
+.root {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+/*   gap: 20px; */
+}
+
+.contact_description {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 35ch;
+  text-align: center;
+  line-height: 30px;
+  font-size: clamp(0.6rem, 5vw,1.1rem);
+  font-family: 'Avenir Light';
+  color: white;
+}
+
+.root > a {
+  color: var(--primary-color);
+}
+
+.email {
+  font-size: clamp(0.6rem, 5vw,1.1rem);
+  margin-top: 30px;
+}
+
+.mobile_numbers_container {
+  margin-top: 30px;
+  display: flex;
+  gap: 7px;
+}
+
+.mobile_numbers_container > span {
+  color: var(--text-color);
+  font-size: clamp(0.6rem, 5vw,1.1rem);
+}
+
+.numbers_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.numbers_container > a{
+  color: var(--primary-color);
+  font-size: clamp(0.6rem, 5vw,1.1rem);
+  text-decoration: none;
+}
