@@ -28,10 +28,10 @@ function Header({
   }
 
   useEffect(() => {
-    if (document.body.style.overflow === 'hidden') {
-      document.body.style.overflow = 'auto'
-    } else {
+    if (isNavOpen) {
       document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
     }
   }, [isNavOpen])
 

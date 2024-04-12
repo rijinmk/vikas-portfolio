@@ -7,6 +7,7 @@ import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
 import ContactCard from '../../components/ContactCard/ContactCard'
+import Footer from '../../components/Layout/Footer/Footer'
 
 function ComponentGallery() {
   return (
@@ -20,6 +21,13 @@ function ComponentGallery() {
             sectionHeading={<SectionHeading {...data.ContactCard.SectionHeading} />}
             {...data.ContactCard}
           />
+        </div>
+      {/* Footer Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>Footer</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Rijin Mk</div>
+          <Footer {...data.Footer} />
         </div>
       </div>
 
