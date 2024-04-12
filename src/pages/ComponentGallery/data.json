@@ -74,6 +74,10 @@
   "Section": {
     "backgroundImageURL": "https://picsum.photos/seed/picsum/1080/720"
   },
+  "Footer" : {
+    "logo" : "/static/media/vikas_logo.318764dc0b4ad357eddeb1ca4e4798c5.svg",
+    "copyrightNotice" : "© 2024 by Vikas Prakash"
+  },
   "ContactCard" : {
     "SectionHeading": {
       "index": "04",
