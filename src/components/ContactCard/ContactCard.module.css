@@ -1,7 +1,6 @@
 .root {
-  width: 700px;
+  width: min(100%, 600px);
   margin: 0 auto;
-  border: 1px solid red;
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
@@ -11,12 +10,11 @@
 }
 
 .contact_description {
-  border: 1px solid red;
   margin: 0 auto;
   width: 35ch;
   text-align: center;
   line-height: 30px;
-  font-size: clamp(0.6rem, 5vw,1.1rem);
+  font-size: clamp(0.4rem, 5vw, 1.1rem);
   font-family: 'Avenir Light';
   color: white;
 }
@@ -28,7 +26,23 @@
 .email {
   font-size: clamp(0.6rem, 5vw,1.1rem);
   margin-top: 30px;
+  text-decoration: none;
 }
+
+.socials_container {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.social_button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.social_icon {
+  width: 20px;
+}
+
 
 .mobile_numbers_container {
   margin-top: 30px;

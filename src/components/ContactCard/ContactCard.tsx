@@ -39,8 +39,8 @@ export default function ContactCard({
       <div className={styles.socials_container}>
         {socials.map((eachSocialObj) => (
           <div className={styles.social_container} key={eachSocialObj.link}>
-            <button type='button' onClick={() => handleSocialLink(eachSocialObj.link)}>
-              <img src={`${eachSocialObj.icon}`} alt='social' />
+            <button className={styles.social_button} type='button' onClick={() => handleSocialLink(eachSocialObj.link)}>
+              <img className={styles.social_icon} src={`${eachSocialObj.icon}`} alt='social' />
             </button>
           </div>
         ))}
