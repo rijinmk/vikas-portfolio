@@ -24,15 +24,6 @@ function ComponentGallery() {
         </div>
       </div>
 
-      {/* Footer Component ------------------------------------- */}
-      <div className={styles.root}>
-        <div className={styles.title}>Footer</div>
-        <div className={styles.componentHolder}>
-          <div className={styles.authorName}>Author: Rijin Mk</div>
-          <Footer {...data.Footer} />
-        </div>
-      </div>
-
       {/* SkillGrid Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>SkillGrid</div>
