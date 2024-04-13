@@ -22,6 +22,8 @@ function ComponentGallery() {
             {...data.ContactCard}
           />
         </div>
+      </div>
+
       {/* Footer Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>Footer</div>
