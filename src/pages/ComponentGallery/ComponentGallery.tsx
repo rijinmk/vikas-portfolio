@@ -7,7 +7,6 @@ import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
 import ContactCard from '../../components/ContactCard/ContactCard'
-import Footer from '../../components/Layout/Footer/Footer'
 
 function ComponentGallery() {
   return (
