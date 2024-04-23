@@ -1,0 +1,71 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  position: relative;
+}
+
+.root .experienceContainer {
+  width: 320px;
+  padding: 40px;
+  position: relative;
+  text-align: right;
+}
+
+.root .experienceLine {
+  height: 100%;
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  left: 50%;
+  top: 50px;
+}
+
+.root .experienceDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  background-color: var(--primary-color);
+}
+
+.root .experienceContainer:nth-child(odd) .experienceDot {
+  left: calc(100% - 10px);
+}
+
+.root .experienceContainer:nth-child(even) {
+  align-self: flex-end;
+  text-align: left;
+}
+
+.root .dateRange {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.root h2 {
+  font-weight: 400;
+}
+
+.root .experienceType {
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .root .experienceContainer:nth-child(even) {
+    align-self: auto;
+    text-align: left;
+  }
+
+  .root .experienceContainer {
+    text-align: left;
+  }
+
+  .root .experienceLine {
+    left: 0%;
+  }
+  .root .experienceContainer:nth-child(odd) .experienceDot {
+    left: -10px;
+  }
+}

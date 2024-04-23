@@ -7,10 +7,20 @@ import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
 import ContactCard from '../../components/ContactCard/ContactCard'
+import ExperienceTimeline from '../../components/ExperienceTimeline/ExperienceTimeline'
 
 function ComponentGallery() {
   return (
     <>
+      {/* ContactCard Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>ContactCard</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Dayan</div>
+          <ExperienceTimeline />
+        </div>
+      </div>
+
       {/* ContactCard Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>ContactCard</div>
