@@ -16,16 +16,9 @@ function Layout({ children }: LayoutProps) {
 
   return (
     <>
-      <Header
-        logo={Logo}
-        navItems={['HOME', 'PROJECTS', 'SKILLS', 'EXPERIENCE', 'CONTACT']}
-        onNavItemClick={handleNavigation}
-        activeItem={activeItem}
-        bgColor='#0f0f0f84'
-        textColor='#FFFFFF'
-      />
+      <Header logo={Logo} navItems={['HOME', 'PROJECTS', 'SKILLS', 'EXPERIENCE', 'CONTACT']} onNavItemClick={handleNavigation} activeItem={activeItem} bgColor='#0f0f0f84' textColor='#FFFFFF' />
       {children}
-      <Footer />
+      <Footer logo={Logo} copyrightNotice='© 2024 by Vikas Prakash' />
     </>
   )
 }

@@ -4,13 +4,25 @@ import NameIntro from '../../components/NameIntro/NameIntro'
 import Section from '../../components/Section/Section'
 import SkillGrid from '../../components/SkillGrid/SkillGrid'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
-import profileIcon from '../../assets/images/jpg/vigas-pragash.jpg'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
+import ContactCard from '../../components/ContactCard/ContactCard'
 
 function ComponentGallery() {
   return (
     <>
+      {/* ContactCard Component ------------------------------------- */}
+      <div className={styles.root}>
+        <div className={styles.title}>ContactCard</div>
+        <div className={styles.componentHolder}>
+          <div className={styles.authorName}>Author: Dayan</div>
+          <ContactCard
+            sectionHeading={<SectionHeading {...data.ContactCard.SectionHeading} />}
+            {...data.ContactCard}
+          />
+        </div>
+      </div>
+
       {/* SkillGrid Component ------------------------------------- */}
       <div className={styles.root}>
         <div className={styles.title}>SkillGrid</div>
@@ -54,7 +66,7 @@ function ComponentGallery() {
         <div className={styles.title}>About Me Card</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Hexisbad</div>
-          <AboutMeCard profileIcon={profileIcon} {...data.AboutMeCard} />
+          <AboutMeCard {...data.AboutMeCard} />
         </div>
       </div>
     </>
