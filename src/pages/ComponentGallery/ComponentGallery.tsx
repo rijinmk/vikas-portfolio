@@ -6,17 +6,20 @@ import SkillGrid from '../../components/SkillGrid/SkillGrid'
 import AboutMeCard from '../../components/AboutMeCard/AboutMeCard'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import data from './data.json'
-import Footer from '../../components/Layout/Footer/Footer'
+import ContactCard from '../../components/ContactCard/ContactCard'
 
 function ComponentGallery() {
   return (
     <>
-      {/* Footer Component ------------------------------------- */}
+      {/* ContactCard Component ------------------------------------- */}
       <div className={styles.root}>
-        <div className={styles.title}>Footer</div>
+        <div className={styles.title}>ContactCard</div>
         <div className={styles.componentHolder}>
-          <div className={styles.authorName}>Author: Rijin Mk</div>
-          <Footer {...data.Footer} />
+          <div className={styles.authorName}>Author: Dayan</div>
+          <ContactCard
+            sectionHeading={<SectionHeading {...data.ContactCard.SectionHeading} />}
+            {...data.ContactCard}
+          />
         </div>
       </div>
 

@@ -10,6 +10,7 @@ interface NameIntroProps {
 
 function NameIntro({ name, subtitle, textColor, largeFontSize }: NameIntroProps) {
   const names = name.split(' ').map((e) => e)
+
   return (
     <div
       className={styles.root}

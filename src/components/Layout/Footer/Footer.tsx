@@ -7,7 +7,7 @@ interface FooterProps {
   copyrightNotice?: string
 }
 
-function Footer({ logo, copyrightNotice } : FooterProps) {
+function Footer({ logo, copyrightNotice }: FooterProps) {
   const navigate = useNavigate()
 
   function navigateHome() {
