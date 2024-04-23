@@ -86,7 +86,7 @@
     },
     "description" : "Feel free to drop me an email or contact me through phone or LinkedIn, links below!",
     "email" : "vikasprakash1597@gmail.com",
-    "mobile_numbers" : ["+971 552889738","+91 9566191889"],
+    "mobileNumbers" : ["+971 552889738","+91 9566191889"],
     "socials" : [{"icon" : "/static/media/linkedin_icon.84245457288d39a03c1e2eac55678dd1.svg", "link" : "https://www.linkedin.com/in/vikas-prakash97/"}]
   }
 }

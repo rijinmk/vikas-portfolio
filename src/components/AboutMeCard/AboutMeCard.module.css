@@ -1,5 +1,5 @@
 .root {
-  max-width: 550px;
+  width: 550px;
   min-height: 200px;
   height: auto;
   background-color: var(--secondary-color);
@@ -28,6 +28,6 @@
 .description {
   font-family: var(--font-avenir-thin);
   color: var(--text-color);
-  white-space: break-spaces;
+  white-space: pre;
   text-wrap: wrap;
 }

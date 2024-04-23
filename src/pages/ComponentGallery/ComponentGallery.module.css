@@ -40,9 +40,3 @@
   background: #eee;
   margin-bottom: 40px;
 }
-
-@media (max-width: 900px) {
-  .root > .title:before {
-    display: none;
-  }
-}

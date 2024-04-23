@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './SectionHeading.module.css'
 
-interface ProjectProps {
+export interface ProjectProps {
   index: string
   title: string
   subtitle?: string

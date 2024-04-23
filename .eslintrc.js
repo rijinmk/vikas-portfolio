@@ -3,7 +3,15 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'airbnb', 'plugin:jsx-a11y/recommended', 'plugin:react-hooks/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended'
+  ],
   rules: {
     semi: [2, 'never'],
     quotes: [2, 'single', { avoidEscape: true }],
@@ -24,7 +32,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/no-unescaped-entities': 'off',
     'react/jsx-one-expression-per-line': 'off',
-    'react/no-unused-prop-types': 'warn',
-    'object-curly-newline': 'off'
+    'react/no-unused-prop-types': 'warn'
   }
 }

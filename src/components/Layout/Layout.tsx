@@ -25,7 +25,7 @@ function Layout({ children }: LayoutProps) {
         textColor='#FFFFFF'
       />
       {children}
-      <Footer logo={Logo} copyrightNotice='© 2024 by Vikas Prakash' />
+      <Footer />
     </>
   )
 }
