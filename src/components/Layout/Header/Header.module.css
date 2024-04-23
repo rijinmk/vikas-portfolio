@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.088);
-  font-family: "Avenir Light";
+  font-family: 'Avenir Light';
   z-index: 999;
 }
 
@@ -15,7 +15,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-700%,-50%);
+  transform: translate(-700%, -50%);
   z-index: 5;
 }
 
@@ -46,7 +46,6 @@
 .hamburger_container {
   display: none;
 }
-
 
 /* MOBILE STYLES */
 @media (max-width: 900px) {
@@ -108,7 +107,7 @@
   .logo_container {
     margin-left: 10px;
   }
-  
+
   .logo_container {
     position: static;
     top: auto;
