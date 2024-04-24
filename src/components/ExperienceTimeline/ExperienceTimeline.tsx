@@ -1,4 +1,5 @@
 import React from 'react'
+import DOMPurify from 'dompurify'
 import styles from './ExperienceTimeline.module.css'
 
 interface ExperienceNode {
@@ -25,8 +26,7 @@ function ExperienceTimeline({ experiences, color = '#000' }: ExperienceTimelineP
           <p className={styles.experienceType}>{exp.type}</p>
           <div
             className={styles.experienceRichText}
-            // eslint-disable-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: exp.richText }}
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(exp.richText) }}
           />
         </div>
       ))}
