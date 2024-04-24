@@ -3,7 +3,23 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'airbnb', 'plugin:jsx-a11y/recommended', 'plugin:react-hooks/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended'
+  ],
+  overrides: [
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'no-unused-vars': 'off'
+      }
+    }
+  ],
   rules: {
     semi: [2, 'never'],
     quotes: [2, 'single', { avoidEscape: true }],
