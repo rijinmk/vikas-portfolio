@@ -1,0 +1,63 @@
+.root {
+  width: min(100%,900px);
+  height: auto;
+}
+
+.caseStudyContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+.caseStudyContainer:hover > img {
+  transform: scale(1.1);
+  filter: brightness(85%);
+}
+
+.caseStudyContainer > img {
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+  transition: ease 1s;
+  display: block;
+  z-index: 1;
+}
+
+.caseStudyInfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  z-index: 2;
+  padding: 20px;
+}
+
+.caseStudyInfo > h3 {
+  font-size: clamp(0.3rem, 3vw, 1.4rem);
+  font-family: var(--font-avenir-thin);
+  font-weight: lighter;
+  color: white;
+  margin : 0px;
+  text-align: center;
+}
+
+.subtitle,.project_type {
+  font-size: clamp(0.2rem, 3vw, 0.9rem);
+  font-family: var(--font-avenir-thin);
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+  
+.subtitle {
+  margin : 10px 0 0 0;
+}
+
+@media (max-width: 900px) {
+
+  .caseStudyContainer > img {
+    height: 170px;
+  }
+
+}
