@@ -17,7 +17,7 @@ function ComponentGallery() {
         <div className={styles.title}>ContactCard</div>
         <div className={styles.componentHolder}>
           <div className={styles.authorName}>Author: Rijin Mk</div>
-          <ExperienceTimeline />
+          <ExperienceTimeline {...data.ExperienceTimeline} />
         </div>
       </div>
 

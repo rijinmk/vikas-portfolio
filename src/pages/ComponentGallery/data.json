@@ -74,19 +74,46 @@
   "Section": {
     "backgroundImageURL": "https://picsum.photos/seed/picsum/1080/720"
   },
-  "Footer" : {
-    "logo" : "/static/media/vikas_logo.318764dc0b4ad357eddeb1ca4e4798c5.svg",
-    "copyrightNotice" : "© 2024 by Vikas Prakash"
+  "Footer": {
+    "logo": "/static/media/vikas_logo.318764dc0b4ad357eddeb1ca4e4798c5.svg",
+    "copyrightNotice": "© 2024 by Vikas Prakash"
   },
-  "ContactCard" : {
+  "ContactCard": {
     "SectionHeading": {
       "index": "04",
       "title": "CONTACT",
       "color": "#ffffff"
     },
-    "description" : "Feel free to drop me an email or contact me through phone or LinkedIn, links below!",
-    "email" : "vikasprakash1597@gmail.com",
-    "mobileNumbers" : ["+971 552889738","+91 9566191889"],
-    "socials" : [{"icon" : "/static/media/linkedin_icon.84245457288d39a03c1e2eac55678dd1.svg", "link" : "https://www.linkedin.com/in/vikas-prakash97/"}]
+    "description": "Feel free to drop me an email or contact me through phone or LinkedIn, links below!",
+    "email": "vikasprakash1597@gmail.com",
+    "mobileNumbers": ["+971 552889738", "+91 9566191889"],
+    "socials": [
+      {
+        "icon": "/static/media/linkedin_icon.84245457288d39a03c1e2eac55678dd1.svg",
+        "link": "https://www.linkedin.com/in/vikas-prakash97/"
+      }
+    ]
+  },
+  "ExperienceTimeline": {
+    "experiences": [
+      {
+        "dateRange": "Jan to Feb",
+        "title": "My work",
+        "type": "Test",
+        "richText": "<p>Bootcamp course which covered important topics with the help of weekly projects and a final client project.</p><ul><li>User Research</li><li>Insights and Personas</li><li>Sketching</li><li>Maps and Flows</li><li>Wireframes to Prototypes</li><li>Usability Testing</li><li>Visual Design</li><li>Design Systems and Patterns</li></ul>"
+      },
+      {
+        "dateRange": "Jan 2021 - Dec 2021",
+        "title": "Another Title",
+        "type": "Another Type",
+        "richText": "<p>My main tasks were creating/editing Product and Concept explainer videos on After Effects and Premiere Pro, and creating Sales videos using an online animation software called Powtoon. And also created images and animations for their website.</p>"
+      },
+      {
+        "dateRange": "Jan 2021 - Dec 2021",
+        "title": "Another Title",
+        "type": "Another Type",
+        "richText": "<ul><li>Created a UI for a Quiz Game for DEWA.<li>Created Lip-Sync for a 3D-Model for ADNOC.<li>Helped design a Multi-Touchscreen Table-top for ADIPEC'20.</ul>"
+      }
+    ]
   }
 }
