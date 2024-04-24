@@ -25,6 +25,7 @@ function ExperienceTimeline({ experiences, color = '#000' }: ExperienceTimelineP
           <p className={styles.experienceType}>{exp.type}</p>
           <div
             className={styles.experienceRichText}
+            // eslint-disable-line react/no-danger
             dangerouslySetInnerHTML={{ __html: exp.richText }}
           />
         </div>
