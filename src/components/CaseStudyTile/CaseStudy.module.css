@@ -35,7 +35,7 @@
 
 .caseStudyInfo > h3 {
   font-size: clamp(0.3rem, 3vw, 1.4rem);
-  font-family: 'Avenir Light';
+  font-family: var(--font-avenir-thin);
   font-weight: lighter;
   color: white;
   margin : 0px;
@@ -44,7 +44,7 @@
 
 .subtitle,.project_type {
   font-size: clamp(0.2rem, 3vw, 0.9rem);
-  font-family: 'Avenir Light';
+  font-family: var(--font-avenir-thin);
   color: white;
   margin: 0;
   text-align: center;
