@@ -12,14 +12,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended'
   ],
-  overrides: [
-    {
-      files: ['*.d.ts'],
-      rules: {
-        'no-unused-vars': 'off'
-      }
-    }
-  ],
   rules: {
     semi: [2, 'never'],
     quotes: [2, 'single', { avoidEscape: true }],
