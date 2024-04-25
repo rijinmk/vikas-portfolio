@@ -5,7 +5,7 @@ interface NameIntroProps {
   name: string
   subtitle?: string
   textColor?: string
-  largeFontSize?: number
+  largeFontSize?: string
 }
 
 function NameIntro({ name, subtitle, textColor, largeFontSize }: NameIntroProps) {
