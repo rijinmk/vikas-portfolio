@@ -63,8 +63,7 @@
   },
   "NameIntro": {
     "name": "Rijin Mukundan",
-    "subtitle": "Front-End Engineer",
-    "textColor": "#ffffff"
+    "subtitle": "Front-End Engineer"
   },
   "SectionHeading": {
     "index": "02",
@@ -75,24 +74,19 @@
   "Section": {
     "backgroundImageURL": "https://picsum.photos/seed/picsum/1080/720"
   },
-  "Footer": {
-    "logo": "/static/media/vikas_logo.318764dc0b4ad357eddeb1ca4e4798c5.svg",
-    "copyrightNotice": "© 2024 by Vikas Prakash"
+  "Footer" : {
+    "logo" : "/static/media/vikas_logo.318764dc0b4ad357eddeb1ca4e4798c5.svg",
+    "copyrightNotice" : "© 2024 by Vikas Prakash"
   },
-  "ContactCard": {
+  "ContactCard" : {
     "SectionHeading": {
       "index": "04",
       "title": "CONTACT",
       "color": "#ffffff"
     },
-    "description": "Feel free to drop me an email or contact me through phone or LinkedIn, links below!",
-    "email": "vikasprakash1597@gmail.com",
-    "mobileNumbers": ["+971 552889738", "+91 9566191889"],
-    "socials": [
-      {
-        "icon": "/static/media/linkedin_icon.84245457288d39a03c1e2eac55678dd1.svg",
-        "link": "https://www.linkedin.com/in/vikas-prakash97/"
-      }
-    ]
+    "description" : "Feel free to drop me an email or contact me through phone or LinkedIn, links below!",
+    "email" : "vikasprakash1597@gmail.com",
+    "mobileNumbers" : ["+971 552889738","+91 9566191889"],
+    "socials" : [{"icon" : "/static/media/linkedin_icon.84245457288d39a03c1e2eac55678dd1.svg", "link" : "https://www.linkedin.com/in/vikas-prakash97/"}]
   }
 }
