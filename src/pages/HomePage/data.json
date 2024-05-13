@@ -1,6 +1,6 @@
 {
   "AboutMeCard": {
-    "profileIcon": "/static/media/vigas-pragash.be058179ac53680aef65.jpg",
+    "profileIcon": "https://static.wixstatic.com/media/65a701_5885a11629b24515b21579c100a844d7~mv2.jpg/v1/fill/w_124,h_124,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/65a701_5885a11629b24515b21579c100a844d7~mv2.jpg",
     "title": "ABOUT ME",
     "description": "I am a UI/UX Designer and an avid VFX and gaming fan. Although I have experience with programming, my passion is for creating new designs with ease.‌ \n\n With a degree in Software Engineering, intensive training in UX design research, and a knack for creating killer content, motion graphics, and graphic design - I\"m a total tech whiz! \n\n My strong creative and technical expertise enables me to create interactive prototypes, tell gripping tales, and eliminate the communication gap between designers and programmers when bringing concepts from conception to completion. \n\n I believe that good design can make a difference in people's lives. By developing experiences that are more beneficial, usable, pleasurable, and human, I hope to make a difference!"
   },
@@ -62,15 +62,16 @@
     "spacing": 20
   },
   "NameIntro": {
-    "name": "Rijin Mukundan",
-    "subtitle": "Front-End Engineer",
-    "textColor": "#ffffff"
+    "name": "Vikas Prakash",
+    "subtitle": "UI / UX Designer",
+    "textColor": "#fff",
+    "largeFontSize": "65px"
   },
   "SectionHeading": {
     "index": "02",
     "title": "PROJECTS",
-    "subtitle": "My Latest Work'",
-    "color": "#000000"
+    "subtitle": "My Latest Work",
+    "color": "#FFFFFF"
   },
   "Section": {
     "backgroundImageURL": "https://picsum.photos/seed/picsum/1080/720"

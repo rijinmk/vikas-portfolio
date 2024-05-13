@@ -4,6 +4,9 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .cell {
@@ -30,6 +33,9 @@
   padding: 30px;
   background: #004717;
   transition: background 0.3s;
+  font-family: var(--font-lulo-thin);
+  font-weight: 400;
+  font-size: 11px;
 }
 
 .cellText:hover {
